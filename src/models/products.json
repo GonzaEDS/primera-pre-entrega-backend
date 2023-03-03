@@ -1,0 +1,30 @@
+[
+   {
+      "title": "Escuadra",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "price": 123.42,
+      "thumbnail": "https://cdn4.iconfinder.com/data/icons/education-759/2050/Education_flat-16-1024.png",
+      "id": 1,
+      "timestamp": 16691391585.21,
+      "code": "cc71d32f-bf8a-4cb1-80b2-81a63343a9d2",
+      "status": true
+   },
+   {
+      "title": "Test",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "price": 111.42,
+      "thumbnail": "test.png",
+      "code": "cc71d32f2",
+      "stock": 3,
+      "id": 2
+   },
+   {
+      "title": "Test",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "price": 111.42,
+      "thumbnail": "test.png",
+      "code": "cc71d32f2",
+      "stock": 3,
+      "id": 3
+   }
+]
