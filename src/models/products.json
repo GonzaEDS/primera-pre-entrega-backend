@@ -4,7 +4,7 @@
       "title": "Sony WH-1000XM4 Wireless Noise-Cancelling Headphones",
       "description": "Experience the next level of silence with these headphones featuring an improved design for better noise-cancellation.",
       "code": "SWH1000XM4B",
-      "price": 349.99,
+      "price": 350.5,
       "status": true,
       "stock": 100,
       "category": "Electronics",
@@ -23,14 +23,14 @@
    },
    {
       "id": 3,
-      "title": "Samsung Galaxy S21 Ultra 5G",
-      "description": "Experience the ultimate in mobile technology with this powerful smartphone, featuring a stunning 6.8 inch screen and 5G connectivity.",
-      "code": "SGS21U5GB",
-      "price": 1199.99,
+      "title": "Sony WH-1000XM4 Wireless Noise-Cancelling Headphones",
+      "description": "Experience the next level of silence with these headphones featuring an improved design for better noise-cancellation.",
+      "code": "SWH1000XM4B",
+      "price": 349.99,
       "status": true,
-      "stock": 25,
-      "category": "Phones",
-      "thumbnail": "https://fakeurl.com/product-c.png"
+      "stock": 100,
+      "category": "Electronics",
+      "thumbnail": "https://fakeurl.com/product-a.png"
    },
    {
       "id": 4,
@@ -64,5 +64,15 @@
       "stock": 20,
       "category": "Kitchen",
       "thumbnail": "https://fakeurl.com/product-f.svg"
+   },
+   {
+      "title": "Dyson V11 Absolute Cordless Vacuum",
+      "description": "Clean your home with ease using this powerful, cordless vacuum that features intelligent suction and a high-capacity bin for extended cleaning sessions.",
+      "price": 599.99,
+      "thumbnail": "https://fakeurl.com/product-h.svg",
+      "code": "DYV11ABS",
+      "stock": 8,
+      "status": true,
+      "id": 7
    }
 ]

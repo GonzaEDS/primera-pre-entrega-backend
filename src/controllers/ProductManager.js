@@ -14,7 +14,7 @@ class ProductManager {
     }
   }
 
-  async saveProduct(title, description, price, thumbnail, code, stock) {
+  async saveProduct(title, description, price, thumbnail, code, stock, status) {
     let productsArray = []
     try {
       productsArray = await fs.readFile(this.fileName, 'utf-8')
@@ -27,7 +27,15 @@ class ProductManager {
         console.error(error)
       }
     }
-    const newProduct = { title, description, price, thumbnail, code, stock }
+    const newProduct = {
+      title,
+      description,
+      price,
+      thumbnail,
+      code,
+      stock,
+      status
+    }
 
     if (productsArray.find(prod => prod.code === code)) {
       console.log(`The code ${code} it's already used in the database`)
@@ -41,6 +49,9 @@ class ProductManager {
     ) {
       console.log('All fields are required')
       return
+    }
+    if (!status) {
+      newProduct.status = true
     }
     productsArray.push({
       ...newProduct,

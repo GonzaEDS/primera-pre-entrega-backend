@@ -25,21 +25,48 @@ router.post('/', async (req, res) => {
 // La ruta PUT /:pid deberá tomar un producto y actualizarlo por los campos enviados desde body...
 router.put('/:pid', async (req, res) => {
   let { pid } = req.params
+  if (Object.keys(req.body)[0] == 'id') {
+    res.status(403).json({
+      response: 'Can not modify the id of a product'
+    })
+  }
   try {
     let data = await products.putById(pid, req.body)
+
     if (data) {
       res.status(200).json({
         response: data
       })
     } else {
       res.status(404).json({
-        resposne: 'can not find'
+        respones: 'can not find'
       })
     }
   } catch (error) {
     console.log(error)
     res.status(400).json({
-      responses: 'error'
+      response: 'error'
+    })
+  }
+})
+// La ruta DELETE /:pid deberá eliminar el producto con el pid indicado.
+router.delete('/:pid', async (req, res) => {
+  let { pid } = req.params
+  try {
+    let data = await products.deleteById(pid)
+    if (data) {
+      res.status(200).json({
+        response: 'product deleted'
+      })
+    } else {
+      res.status(404).json({
+        response: 'can not find'
+      })
+    }
+  } catch (error) {
+    console.log(error)
+    res.status(400).json({
+      response: 'error'
     })
   }
 })
@@ -69,27 +96,6 @@ router.get('/:pid', async (req, res) => {
     data.push(await products.getById(pid))
     if (data) {
       res.status(200).send(data)
-    } else {
-      res.status(404).json({
-        response: 'can not find'
-      })
-    }
-  } catch (error) {
-    console.log(error)
-    res.status(400).json({
-      response: 'error'
-    })
-  }
-})
-
-router.delete('/:id', async (req, res) => {
-  let { id } = req.params
-  try {
-    let data = await products.deleteById(id)
-    if (data) {
-      res.status(200).json({
-        response: 'product deleted'
-      })
     } else {
       res.status(404).json({
         response: 'can not find'
