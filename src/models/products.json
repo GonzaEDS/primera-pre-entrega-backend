@@ -1,30 +1,68 @@
 [
    {
-      "title": "Escuadra",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "price": 123.42,
-      "thumbnail": "https://cdn4.iconfinder.com/data/icons/education-759/2050/Education_flat-16-1024.png",
       "id": 1,
-      "timestamp": 16691391585.21,
-      "code": "cc71d32f-bf8a-4cb1-80b2-81a63343a9d2",
-      "status": true
+      "title": "Sony WH-1000XM4 Wireless Noise-Cancelling Headphones",
+      "description": "Experience the next level of silence with these headphones featuring an improved design for better noise-cancellation.",
+      "code": "SWH1000XM4B",
+      "price": 349.99,
+      "status": true,
+      "stock": 100,
+      "category": "Electronics",
+      "thumbnail": "https://fakeurl.com/product-a.png"
    },
    {
-      "title": "Test",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "price": 111.42,
-      "thumbnail": "test.png",
-      "code": "cc71d32f2",
-      "stock": 3,
-      "id": 2
+      "id": 2,
+      "title": "Apple MacBook Air with Apple M1 Chip",
+      "description": "The MacBook Air is designed to be more portable and powerful than ever, with a sleek new design and the power of the M1 chip.",
+      "code": "MBA-2021",
+      "price": 999.99,
+      "status": false,
+      "stock": 10,
+      "category": "Computers",
+      "thumbnail": "https://fakeurl.com/product-b.svg"
    },
    {
-      "title": "Test",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "price": 111.42,
-      "thumbnail": "test.png",
-      "code": "cc71d32f2",
-      "stock": 3,
-      "id": 3
+      "id": 3,
+      "title": "Samsung Galaxy S21 Ultra 5G",
+      "description": "Experience the ultimate in mobile technology with this powerful smartphone, featuring a stunning 6.8 inch screen and 5G connectivity.",
+      "code": "SGS21U5GB",
+      "price": 1199.99,
+      "status": true,
+      "stock": 25,
+      "category": "Phones",
+      "thumbnail": "https://fakeurl.com/product-c.png"
+   },
+   {
+      "id": 4,
+      "title": "Bose SoundLink Revolve+ Bluetooth Speaker",
+      "description": "Enjoy 360 degree sound with this portable speaker that delivers deep, immersive sound and a long-lasting battery life.",
+      "code": "SLREVPLSB",
+      "price": 329.99,
+      "status": true,
+      "stock": 15,
+      "category": "Audio",
+      "thumbnail": "https://fakeurl.com/product-d.svg"
+   },
+   {
+      "id": 5,
+      "title": "Fitbit Sense Smartwatch",
+      "description": "Stay on top of your fitness goals with this advanced smartwatch that features GPS, heart rate monitoring, and stress management tools.",
+      "code": "FB507BKBK",
+      "price": 299.99,
+      "status": false,
+      "stock": 5,
+      "category": "Wearables",
+      "thumbnail": "https://fakeurl.com/product-e.png"
+   },
+   {
+      "id": 6,
+      "title": "Instant Pot Duo Plus 9-in-1 Electric Pressure Cooker",
+      "description": "Cook meals up to 70% faster with this versatile pressure cooker that also functions as a slow cooker, rice cooker, and more.",
+      "code": "IP-DUOPLUS",
+      "price": 119.99,
+      "status": true,
+      "stock": 20,
+      "category": "Kitchen",
+      "thumbnail": "https://fakeurl.com/product-f.svg"
    }
 ]

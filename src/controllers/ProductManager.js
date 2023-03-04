@@ -109,11 +109,11 @@ class ProductManager {
         }
         data = jsonData.map(prod => {
           if (prod.id == product.id) {
-            prod = product
+            return product
           }
           return prod
         })
-        const stringData = JSON.stringify(jsonData, null, 3)
+        const stringData = JSON.stringify(data, null, 3)
         //lo guardo en el archivo
         await fs.writeFile(this.fileName, stringData)
         return product

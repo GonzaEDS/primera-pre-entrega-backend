@@ -2,6 +2,7 @@ import { Router } from 'express'
 const router = Router()
 import products from '../controllers/ProductManager.js'
 
+// La ruta raíz POST / deberá agregar un nuevo producto con los campos...
 router.post('/', async (req, res) => {
   try {
     const { title, description, price, thumbnail, code, stock } = req.body
@@ -18,6 +19,27 @@ router.post('/', async (req, res) => {
     console.log(error)
     res.status(400).json({
       response: 'error'
+    })
+  }
+})
+// La ruta PUT /:pid deberá tomar un producto y actualizarlo por los campos enviados desde body...
+router.put('/:pid', async (req, res) => {
+  let { pid } = req.params
+  try {
+    let data = await products.putById(pid, req.body)
+    if (data) {
+      res.status(200).json({
+        response: data
+      })
+    } else {
+      res.status(404).json({
+        resposne: 'can not find'
+      })
+    }
+  } catch (error) {
+    console.log(error)
+    res.status(400).json({
+      responses: 'error'
     })
   }
 })
@@ -56,27 +78,6 @@ router.get('/:pid', async (req, res) => {
     console.log(error)
     res.status(400).json({
       response: 'error'
-    })
-  }
-})
-
-router.put('/:id', async (req, res) => {
-  let { id } = req.params
-  try {
-    let data = await products.putById(id, req.body)
-    if (data) {
-      res.status(200).json({
-        response: data
-      })
-    } else {
-      res.status(404).json({
-        resposne: 'can not find'
-      })
-    }
-  } catch (error) {
-    console.log(error)
-    res.status(400).json({
-      respones: 'error'
     })
   }
 })
